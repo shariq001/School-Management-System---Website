@@ -1,0 +1,13 @@
+main page
+
+
+school management:
+student management 
+teacher management
+admin management 
+library management
+
+
+student portal
+teacher portal
+admin portal
