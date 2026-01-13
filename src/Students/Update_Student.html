@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student</title>
+
+    <style>
+       * {
+        box-sizing: border-box;
+        margin: 0;padding: 0;
+       }
+
+       body {
+        background: #3e3e3e;
+        padding: 40px;
+       }
+
+       main {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        border-radius: 20px;
+        padding: 30px;
+       }
+
+       #main-head {
+        font-size: 40px;
+        font-family: Playfair;
+        letter-spacing: 5px;
+        text-align: center;
+       }
+
+       label {
+        font-family: Quicksand;
+        font-size: 30px;
+       }
+
+       legend {
+        border-top: 2px solid rgb(160, 160, 160);
+        border-bottom: 2px solid rgb(160, 160, 160);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+
+       input {
+        border: 2px solid #FFDAB3;
+        outline: none;
+        background: #ffe6cb;
+        padding: 7px;
+        border-radius: 5px;
+        width: 400px;
+        height: 40px;
+        font-size: 18px;
+       }
+
+       .legend-div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+       }
+
+       #date-input {
+        width: 805px;
+       }
+
+       #gender-selection-div {
+        display: flex;
+        justify-content: start;
+        gap: 340px;
+        align-items: center;
+       }
+
+       .radio {
+        font-size: 10px;
+        padding: 0;
+        width: 15px;
+        height: 20px;
+       }
+
+       .gender-sel-sub-div {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+       }
+
+       .gender-sel-sub-div label {
+        font-size: 20px;
+       }
+
+       #address-div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       }
+
+       #address-div input {
+        width: 805px;
+       }
+
+       #email-phone{
+        gap: 5px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+       }
+
+       #button {
+        background: #3A2525;
+        color: white;
+        border: none;
+        width: 805px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        font-weight: 500;
+       }
+
+       #button:hover{
+        background: #FFDAB3;
+        color: #3A2525;
+        border: 2px solid #3A2525;
+       }
+
+    </style>
+</head>
+<body>
+    <main>
+        <img src="/src/Screenshot 2026-01-13 203528.png" alt="Student" >
+
+        <h1 id="main-head">Student Data Update Form</h1>
+
+        <form action="">
+            <legend>
+                <div class="legend-div">
+                    <label for="Student Name">Student Name</label>
+                    <div>
+                        <input type="text" name="" id="" placeholder="First" required>
+                        <input type="text" name="" id="" placeholder="Last">
+                    </div>
+                </div>
+
+                <div class="legend-div">
+                    <label for="Father Name">Father Name</label>
+                    <div>
+                        <input type="text" name="" id="" placeholder="First" required>
+                        <input type="text" name="" id="" placeholder="Last">
+                    </div>
+                </div>
+
+                <div class="legend-div">
+                    <label for="Date of Birth">Date of Birth</label>
+                    <div>
+                        <input type="date" name="MM/DD/YYYY" id="date-input" placeholder="MM/DD/YYYY" required>
+                        
+                    </div>
+                </div>
+
+                <div class="legend-div">
+                    <label for="Gender">Gender</label>
+                    <div id="gender-selection-div">
+                        <div class="gender-sel-sub-div">
+                            <input type="radio" placeholder="Male" class="radio" value="Male" name="Gender" required >
+                            <label for="Male">Male</label>
+                        </div>
+                        <div class="gender-sel-sub-div">
+                            <input type="radio" placeholder="Female" class="radio" value="Female" name="Gender" required>
+                            <label for="Female">Female</label>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="legend-div">
+                    <label for="Address">Address</label>
+                    <div id="address-div">
+                        <input type="text" name="" id="" placeholder="Street Address" required>
+                        <input type="text" name="" id="" placeholder="Street Address Line 2">
+                    </div>
+                </div>
+
+                <div>
+                    <input type="text" name="" id="" placeholder="City" required>
+                    <input type="text" name="" id="" placeholder="Province">
+                </div>
+ 
+                <div id="email-phone">
+                    <div class="legend-div">
+                        <label for="Email">Email</label>
+                        <div>
+                            <input type="email" name="" id="" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="legend-div">
+                        <label for="Phone Number">Phone Number</label>
+                        <div>
+                            <input type="tel" name="" id="" placeholder="### ### ####" required>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="UPDATE STUDENT" id="button">
+
+            </legend>
+
+            
+        </form>
+    </main>
+</body>
+</html>
