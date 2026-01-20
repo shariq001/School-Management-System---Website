@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Books</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        margin: 0;padding: 0;
+       }
+
+       body {
+        background: #3e3e3e;
+        padding: 40px;
+       }
+
+       main {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        border-radius: 20px;
+        padding: 58px 30px;
+       }
+
+       #main-head {
+        font-size: 40px;
+        font-family: Playfair;
+        letter-spacing: 5px;
+        text-align: center;
+       }
+
+       table {
+        border-radius: 10px;
+        background: #FFDAB3;
+        padding: 15px;
+       }
+
+       thead {
+        border: 2px solid #3A2525;
+        padding: 8px;
+        
+       }
+
+       th, td {
+        padding: 10px 5px;
+        border: 1px solid #3A2525;
+        width: 170px;
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="/src/Screenshot 2026-01-13 203528.png" alt="Student" >
+
+        <h1 id="main-head">View All Books</h1>
+
+        <table>
+            <thead>
+                <th>Title</th>
+                <th>Author</th>
+                <th>D.O. Publication</th>
+                <th>Genre</th>
+                <th>Subject</th>
+            </thead>
+
+            <tbody>
+                <td>A Brief History of Time</td>
+                <td>Stephen Hawking</td>
+                <td>01 | 04 | 1988</td>
+                <td>Non-Fiction</td>
+                <td>Physics</td>
+            </tbody>
+
+            <tbody>
+                <td>To Kill a Mockingbird</td>
+                <td>Harper Lee</td>
+                <td>11 | 07 | 1960</td>
+                <td>Classic Fiction</td>
+                <td>English Literature</td>
+            </tbody>
+
+            <tbody>
+                <td>The Clean Coder</td>
+                <td>Robert C. Martin</td>
+                <td>13 | 05 | 2011</td>
+                <td>Education</td>
+                <td>Computer Science</td>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete A Teacher</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        margin: 0;padding: 0;
+       }
+
+       body {
+        background: #3e3e3e;
+        padding: 40px;
+       }
+
+       main {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        border-radius: 20px;
+        padding: 58px 30px;
+       }
+
+       #main-head {
+        font-size: 40px;
+        font-family: Playfair;
+        letter-spacing: 5px;
+        text-align: center;
+       }
+
+       input {
+        border: 2px solid #FFDAB3;
+        outline: none;
+        background: #ffe6cb;
+        padding: 7px;
+        border-radius: 5px;
+        width: 450px;
+        height: 40px;
+        font-size: 18px;
+       }
+
+       label {
+        font-family: Quicksand;
+        font-size: 30px;
+       }
+
+       legend {
+        border-top: 2px solid rgb(160, 160, 160);
+        border-bottom: 2px solid rgb(160, 160, 160);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+
+       .form-div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       }
+
+       .radio {
+        font-size: 10px;
+        padding: 0;
+        width: 15px;
+        height: 20px;
+       }
+
+       .gender-sel-sub-div {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+       }
+
+       #gender-selection-div {
+        display: flex;
+        justify-content: start;
+        gap: 200px;
+        align-items: center;
+       }
+
+       .gender-sel-sub-div label {
+        font-size: 20px;
+       }
+
+       #button {
+        background: #3A2525;
+        color: white;
+        border: none;
+        width: 450px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        font-weight: 500;
+       }
+
+       #button:hover{
+        background: #FFDAB3;
+        color: #3A2525;
+        border: 2px solid #3A2525;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="/src/Screenshot 2026-01-13 203528.png" alt="Student" >
+
+        <h1 id="main-head">Delete A Teacher</h1>
+
+        <legend>
+            <div class="form-div">
+                <label for="">Teacher ID</label>
+                <input type="tel" name="" id="" placeholder="Enter Teacher ID" required>
+            </div>
+
+            <div class="form-div">
+                <label for="Do you want to Delete TEacher Data?">Do you want to Delete Teacher Data?</label>
+                    <div id="gender-selection-div">
+                        <div class="gender-sel-sub-div">
+                            <input type="radio" placeholder="Yes" class="radio" value="Yes" name="Gender" required >
+                            <label for="Yes">Yes</label>
+                        </div>
+                        <div class="gender-sel-sub-div">
+                            <input type="radio" placeholder="No" class="radio" value="No" name="Gender" required>
+                            <label for="No">No</label>
+                        </div>
+                        
+                    </div>
+            </div>
+
+            <input type="submit" value="DELETE" id="button">
+        </legend>
+    </main>
+</body>
+</html>
