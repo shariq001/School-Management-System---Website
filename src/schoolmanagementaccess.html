@@ -17,6 +17,11 @@
             text-align: center;
             display: none; /* Hidden by default */
         }
+
+        .hint {
+            color: gray;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
@@ -30,11 +35,13 @@
 
                 <div class="form-div">
                     <label for="username">Enter Admin ID:</label>
+                    <p class="hint">Hint: admin123</p>
                     <input type="text" name="username" id="username" placeholder="Enter admin123" required>
                 </div>
                 
                 <div class="form-div">
                     <label for="password">Enter Password:</label>
+                    <p class="hint">Hint: Password123</p>
                     <input type="password" name="password" id="password" placeholder="Enter Password123" required>
                 </div>
 
